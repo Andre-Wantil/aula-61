@@ -25,8 +25,8 @@ export default function ProgressBar() {
 
       {/* Informações de tempo */}
       <div className="flex justify-between w-full mt-2 text-sm text-gray-300">
-        <p>{formatTime(110)}</p>
-        <p>{formatTime(220)}</p>
+        <p>{formatTime(116)}</p>
+        <p>{formatTime(232)}</p>
       </div>
     </div>
   );

@@ -1,14 +1,13 @@
 import ProgressBar from "../ProgressBar";
 import PlayerController from "../PlayerController";
-import icarus from "../../assets/icarus-bk.jpeg";
+import lentes from "../../assets/lentes.jpg";
 
 export default function NowPlaying({ showProgressBar }) {
   return (
-    <div
+    <section
       className={`${
-        showProgressBar
-          ? ""
-          : "flex flex-row items-center space-x-4 justify-between mt-6"
+        !showProgressBar &&
+        "fixed bottom-0 left-0 w-full flex flex-row items-center space-x-4 justify-between mt-6 p-4 bg-glass-light shadow-custom-glass backdrop-blur-md rounded-custom-glass"
       }`}
     >
       <div
@@ -20,22 +19,22 @@ export default function NowPlaying({ showProgressBar }) {
           className={`${
             showProgressBar ? "rounded-3xl w-full mb-4" : "rounded-2xl w-16"
           }`}
-          src={icarus}
+          src={lentes}
           alt="Music icon"
         />
         <div>
           <h2
             className={`font-bold ${showProgressBar ? "text-xl" : "text-base"}`}
           >
-            Música de amor nunca mais
+            Memórias
           </h2>
           <h3 className={`${showProgressBar ? "text-lg" : "text-sm"}`}>
-            BK, Luccas Carlos, Nansy Silvvz, Gigantes
+            Yun Li, Biffe, Hakuro, Liwan
           </h3>
         </div>
       </div>
       {showProgressBar && <ProgressBar />}
       <PlayerController showControlButtons={showProgressBar} />
-    </div>
+    </section>
   );
 }

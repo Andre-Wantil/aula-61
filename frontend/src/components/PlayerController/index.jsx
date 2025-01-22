@@ -33,7 +33,7 @@ export default function PlayerController(props) {
         <>
           <div className="w-10 h-10 rounded-full bg-slate-900 p-2 flex items-center justify-center">
             <img
-              className="w-full h-full"
+              className="w-full h-full rotate-180"
               src={skip}
               alt="Ícone de voltar uma música"
             />
