@@ -2,21 +2,30 @@ import lentes from "../../assets/lentes.jpg";
 import hearth from "../../assets/hearth-liked.svg"
 
 const musics = [
-    {
-        bora: "bill"
-    },
-    {
-        bora: "bill"
-    },
-    {
-        bora: "bill"
-    },
-    {
-        bora: "bill"
-    },
-    {
-        bora: "bill"
-    }
+  {
+    image: lentes,
+    title: "Memórias",
+    artists: "Yun Li, Biffe, Hakuro, Liwan",
+    liked: true
+  },
+  {
+    image: icarusBk,
+    title: "Outra Música",
+    artists: "Artista 1, Artista 2",
+    liked: true
+  },
+  {
+    image: icarusBk,
+    title: "Vento no litoral",
+    artists: "Legião Urbana",
+    liked: false
+  },
+  {
+    image: icarusBk,
+    title: "Bohemian Rhapsody",
+    artists: "Queen",
+    liked: true
+  }
 ];
 
 export default function Playlist(props) {
